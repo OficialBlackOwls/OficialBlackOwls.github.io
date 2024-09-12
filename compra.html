@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Camiseta</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/logo_black_owls_sin_fondo.png" />
+		<link rel="stylesheet" href="css/compra.css" />
+        <!-- Incluir SweetAlert2 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+        <!-- Incluir SweetAlert2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+	</head>
+	<body>
+
+		<main>
+			<div class="container-img">
+                <img
+                    id="main-product-img"
+                    src="assets/img/frontal.png"
+                    alt="imagen-producto"
+                />
+            </div>            
+			<div class="container-info-product">
+				
+
+                <form id="order-form" class="form">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="form-inner">
+                      <h4>Camiseta Black Owls</h4>
+                      <h2>25€</h2>
+                      <div class="content">
+                        <input class="input" type="text" placeholder="Nombre (Imprimir)" id="Nombre" maxlength="12" required/>
+                        <input class="input" type="email" placeholder="Correo" id="correo" required/>
+                        <input class="input" type="text" placeholder="Discord (opcional)" id="discord"/>
+                        <div class="select-dropdown-container">
+                            <select class="select-dropdown" id="select">
+                                <option disabled selected value="">
+                                    Selecciona la talla
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="container-description">
+                            <div class="title-description">
+                                <h1><u>Importante</u></h1><i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <div class="text-description">
+                                <p>La solicitud de la camiseta se realizará bajo pedido, por lo que contactaremos contigo.</p>
+                            </div>
+                        </div>
+                        <button class="btn" id="btn-request"><i class="fa-solid fa-cart-shopping"></i> Solicitar</button></div>
+                    </div>
+                            
+                </form>
+		</main>
+
+		<section class="container-related-products">
+			<h2>Vistas</h2><br><br>
+			<div class="card-list-products">
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="assets/img/frontal.png"
+							alt="producto-1"
+						/>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="assets/img/lateral.png"
+							alt="producto-2"
+						/>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="assets/img/dorsal.png"
+							alt="producto-3"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

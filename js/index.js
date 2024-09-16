@@ -73,7 +73,7 @@ function sendDiscordMessages() {
                 text: 'Pedido solicitado con éxito. Nos pondremos en contacto contigo lo más rápido posible para finalizar el proceso.'
             }).then(() => {
                 // Redirige a otra página después de que el alert de Swal se haya cerrado
-                window.location.href = 'http://127.0.0.1:3000/index.html'; // Reemplaza con la URL a la que deseas redirigir
+                window.location.href = 'index.html'; // Reemplaza con la URL a la que deseas redirigir
             });
         } else {
             return response.text().then(text => { throw new Error(`Error ${response.status}: ${text}`); });

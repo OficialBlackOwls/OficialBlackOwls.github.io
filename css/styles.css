@@ -7000,12 +7000,24 @@ textarea.form-control-lg {
   display: inline !important;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  height: 300px; 
+  object-fit: cover; 
+  margin: 0 10px; 
+}
+
 .d-inline-block {
   display: inline-block !important;
 }
 
 .d-block {
-  display: block !important;
+  display: flex !important;
 }
 
 .d-grid {
